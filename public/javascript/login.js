@@ -38,8 +38,8 @@ async function signupFormHandler(event) {
   
       // check the response status
       if (response.ok) {
-        console.log('success');
-      } else {
+        document.location.replace('/');
+    } else {
         alert(response.statusText);
       }
     }
